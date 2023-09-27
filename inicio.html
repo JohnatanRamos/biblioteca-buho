@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="menu">
+            <div>
+                <img src="/imagenes/icono.jpeg" alt="icono" width="180px">
+            </div>
+            <div class="links">
+                <a href="">Inicio</a>
+                <a href="">Categorias</a>
+                <a href="contacto.html">Contactanos</a>
+                <a href="">Juegos</a>
+            </div>
+        </div>
+        <div class="contenido">
+            <h2>
+                EL BÚHO LECTOR
+            </h2>
+            <p style="margin: 0px; width: 37%;">
+                En esta página web encontraras miles de cosas para mejorar tu comprensión lectora, hallaras variedades
+                de
+                libros para que puedas leerlos y desarrollar actividades, allí puedes decirnos que aprendiste y como te
+                sentiste. Asi ver que tan buena es nuestra pagina web y ser mejores en la lectura día a día.
+            </p>
+            <button>
+                ¡Empecemos!
+            </button>
+        </div>
+
+        <div class="image-container">
+            <img style="align-self: flex-end;" width="300px" src="/imagenes/libros-voladores.jpeg" alt="libros volando">
+
+        </div>
+    </div>
+</body>
+
+<style>
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        height: 130px;
+    }
+
+    .container {
+        padding: 30px;
+        height: calc(100vh - 120px);
+        margin: 20px;
+        border: 10px solid orange;
+    }
+
+    .contenido {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        height: 281px;
+        gap: 40px;
+    }
+
+    .contenido p {
+        font-size: 18px;
+    }
+
+    .links {
+        display: flex;
+        gap: 70px;
+        height: min-content;
+        padding: 20px 20px 20px 10px;
+        border-top: 3px solid orange;
+        border-bottom: 3px solid orange;
+    }
+
+    .image-container {
+        display: flex;
+        justify-content: end;
+        position: absolute;
+        right: 40px;
+        bottom: 30px;
+    }
+
+    button {
+        height: 45px;
+        width: 175px;
+        border-radius: 15px;
+        font-size: 24px;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+    }
+
+    h2 {
+        margin: 0px;
+    }
+</style>
+
+</html>

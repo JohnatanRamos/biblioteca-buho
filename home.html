@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="libros">
+            <img src="/imagenes/libros.png" alt="libros" width="170px">
+        </div>
+
+        <div class="icono">
+            <img src="/imagenes/icono.jpeg" alt="icono">
+        </div>
+
+        <div class="content-buttons">
+            <p style="max-width: 155px;">
+                Para poder iniciar
+                sesion en nuestra pagina web,
+                debes registrarte y luego
+                podras disfrutar de
+                nuestros libros.
+            </p>
+            <div class="buttons">
+                <button onclick="cambiarRuta('registro.html')">REGISTRARSE</button>
+                <button onclick="cambiarRuta('iniciar-sesion.html')">INICIAR SESION</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function cambiarRuta(ruta) {
+            window.location.href = ruta;
+        }
+    </script>
+
+</body>
+<style>
+    body {
+        margin: 0px;
+    }
+
+    .libros {
+        position: absolute;
+        right: 60px;
+    }
+
+    .container {
+        padding: 30px;
+        height: calc(100vh - 120px);
+        margin: 20px;
+        border: 10px solid orange;
+    }
+
+    .icono {
+        position: absolute;
+        left: 50%;
+        top: 45%;
+        transform: translate(-50%, -50%);
+    }
+
+    .content-buttons {
+        display: flex;
+        justify-content: space-between;
+        width: 51%;
+        position: absolute;
+        left: 31%;
+        top: 84%;
+        transform: translate(-50%, -50%);
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    button {
+        height: 45px;
+        width: 175px;
+        border-radius: 15px;
+    }
+</style>
+
+</html>
